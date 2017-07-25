@@ -74,12 +74,6 @@ void test_alpha_truecolor(BIT_DEPTH bit_depth)
     png.write(path);
 }
 
-char error_correction_char(int ec_level)
-{
-    char ec[] = {'L', 'M', 'Q', 'H'};
-    return ec[ec_level];
-}
-
 int main()
 {
     test_greyscale(BIT_DEPTH_1);
